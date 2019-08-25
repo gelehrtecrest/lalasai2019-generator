@@ -38,13 +38,9 @@
 			} else {
 				img = null;
 			}
-		} else if($('input[name=logo]:checked').val() === 'url1'){
-			var baseImg = new Image();
-			baseImg.src = 'https://gelehrtecrest.github.io/lalasai2019-generator/image_1.png';
-			img = new createjs.Bitmap(baseImg);
 		} else { 
 			var baseImg = new Image();
-			baseImg.src = 'https://gelehrtecrest.github.io/lalasai2019-generator/image_2.png';
+			baseImg.src = 'https://gelehrtecrest.github.io/lalasai2019-generator/' + $('input[name=logo]:checked').val() + '.png';
 			img = new createjs.Bitmap(baseImg);
 		}
 
